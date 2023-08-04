@@ -1,19 +1,19 @@
 import server
 import model
-import pandas as pd
+import model2
 
-
-def spinUp():
-    print("Spinned up")
+# The main function where execution takes place
 
 
 def main():
-    model.runModel()
-
-    spinUp()
+    # Models
+    s = model.valueString()
+    c = model2.valueString()
+    # Server
     server.init_server()
 
-    print("\nMain run\n")
+    print("Gracefully shutting down...")
+    print(s, c)
 
 
 if __name__ == "__main__":

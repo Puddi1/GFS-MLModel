@@ -1,4 +1,4 @@
-__all__ = ["main"]  # File names to export
+__all__ = ["server"]  # File names to export
 # To add backwards compatbility when importing from other files, simply add:
 # from .fileName import functionName
-from .main import init_server
+from .server import *
