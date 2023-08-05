@@ -1,9 +1,10 @@
 from flask import Blueprint
-import model
+import src.model
 
 api = Blueprint("api", __name__)
 
 
+# Returns a 200 ok response if the app is running correctly
 @api.route("/status", methods=["GET"])
 def status():
-    return
+    return 200

@@ -7,9 +7,15 @@ Perfect match if you use the GFS-Stack.
 
 ## Intro and Credits
 
+S
+
 ## To Start
 
+make init
+
 ## To Production
+
+dokerize and run locally or push to a server, where you can run models or just push the build to be run constantly.
 
 ## Useful Commands
 
