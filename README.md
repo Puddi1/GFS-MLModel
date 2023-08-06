@@ -25,7 +25,7 @@ dokerize and run locally or push to a server, where you can run models or just p
 
 ## Note
 
-1. How to manage ENVs in local environment / docker
-2. How to use this local environment: install all dependencies?
-3. flask graceful shutdown
-4. flask double run, app.debun = false?
+1. add flask 'TEMPLATES_AUTO_RELOAD': True // hot reload doesn't work
+2. How to manage ENVs in (local environment, done) docker
+
+Later notes: 0. flask graceful shutdown in prod?

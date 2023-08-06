@@ -1,6 +1,11 @@
 # bin/bash
 
-touch ".env"
+echo "Initializing App"
 
-# Ask all ENV
-# Make also settings.py from here? not necessary
+# Create and fill ENV variables
+# touch ".env"
+
+# Create python environment and install required dependencies
+# python3 -m venv .venv
+# . .venv/bin/activate
+# pip3 install .

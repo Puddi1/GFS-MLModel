@@ -15,10 +15,10 @@ app.register_blueprint(admin, url_prefix="/admin")
 
 
 def init_server():
-
     if st.DEVELOPMENT == "true":
         print("\nServer Initialization in Development Environment\n")
-        app.run(host=st.HOST, port=st.PORT, debug=False)
+        app.run(host=st.HOST, port=st.PORT, debug=True)
         return
 
+    print("\nServer Initialization in Production Environment\n")
     serve(app, host=st.HOST, port=st.PORT)

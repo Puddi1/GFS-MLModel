@@ -1,2 +1,23 @@
-# Add dependencies
-# https://pip.pypa.io/en/stable/reference/build-system/pyproject-toml/
+[project]
+name = "GFS-MLModel"
+version = "0.1.0"
+authors = [
+    {name = "Puddi"}
+]
+description = "GFS MLModel is a stack to build, traind and test one or multiple Machine Learning models with a docker container as quickly as possible."
+readme = "README.md"
+requires-python = "3.9.7"
+license = {text = "MIT"}
+classifiers = [
+    "Framework :: Flask",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "Flask",
+    "pandas",
+    "waitress",
+    "python-dotenv",
+    "jax",
+    "tensorflow",
+    "transformers",
+]

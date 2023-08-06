@@ -1,11 +1,11 @@
-import settings
-import src.model2 as mod2
-import src.model as mod
 import src.server as ser
+import src.model as mod
+import src.model2 as mod2
+import settings
+settings
+
 
 # The main function where execution takes place
-
-
 def main():
     # Models
     s = mod.valueString()
