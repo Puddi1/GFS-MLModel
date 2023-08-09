@@ -22,4 +22,5 @@ dependencies = [
     "transformers",
     "huggingface_hub",
     "jaxlib",
+    "peft",
 ]
