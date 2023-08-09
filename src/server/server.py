@@ -1,6 +1,6 @@
 # This is the server exported file, functions and variables defined here are
 # the "external" that the entire app can and will use
-
+import src.huggingface as hf
 import settings as st
 from waitress import serve
 from flask import Flask
@@ -15,6 +15,8 @@ app.register_blueprint(admin, url_prefix="/admin")
 
 
 def init_server():
+    print(hf.DownloadFromHfHub("", ""))
+
     if st.DEVELOPMENT == "true":
         print("\nServer Initialization in Development Environment\n")
         app.run(host=st.HOST, port=st.PORT, debug=True)

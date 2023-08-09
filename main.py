@@ -1,6 +1,7 @@
 import src.server as ser
 import src.model as mod
 import src.model2 as mod2
+import src.huggingface as hf
 import settings
 settings
 
@@ -11,6 +12,8 @@ def main():
     s = mod.valueString()
     c = mod2.valueString()
     print(s, c)
+
+    print(hf.DownloadFromHfHub("", ""))
 
     # Server
     ser.init_server()

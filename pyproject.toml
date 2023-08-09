@@ -21,4 +21,5 @@ dependencies = [
     "tensorflow",
     "transformers",
     "huggingface_hub",
+    "jaxlib",
 ]
